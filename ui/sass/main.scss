@@ -1,0 +1,9 @@
+@import 'fonts';
+@import 'palette';
+
+body { 
+  @extend .sans;
+  
+  background-color: #000;
+  color: #FFF;
+}
