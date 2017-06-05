@@ -1,5 +1,15 @@
-$gold: rgb(242, 205, 45);
+$gold: #eb9e36;//s#f2a92d;
+$black: #131312;
+$white: #eff4ec;
 
 .gold { color: $gold; }
 .gold-border { border-color: $gold; }
 .gold-bg { background-color: $gold; }
+
+.black { color: $black; }
+.black-border { border-color: $black; }
+.black-bg { background-color: $black; }
+
+.white { color: $white; }
+.white-border { border-color: $white; }
+.white-bg { background-color: $white; }

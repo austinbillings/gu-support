@@ -1,0 +1,64 @@
+@mixin spotlight ($left: white, $right: black) {
+	background: linear-gradient(270deg, $left, $right);
+	background-size: 200% 200%;
+
+	-webkit-animation: Spotlight 6s ease infinite;
+	-moz-animation: Spotlight 6s ease infinite;
+	animation: Spotlight 6s ease infinite;
+
+	@-webkit-keyframes Spotlight {
+	    0% { background-position: 13% 0% } 
+	    50% { background-position: 88% 100% } 
+	    100% { background-position: 13% 0% } 
+	}
+	@-moz-keyframes Spotlight {
+	    0% { background-position: 13% 0% } 
+	    50% { background-position: 88% 100% } 
+	    100% { background-position: 13% 0% } 
+	}
+	@keyframes Spotlight {
+	    0% { background-position: 13% 0% } 
+	    50% { background-position: 88% 100% } 
+	    100% { background-position: 13% 0% } 
+	}
+}
+
+@mixin alive {
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	
+	&:hover {
+		transform: scale(1.05);
+	}
+}
+
+@mixin placeholderz ($color, $opacity: 1) {
+	::-webkit-input-placeholder {
+		color: $color;
+		opacity: $opacity;		
+	}
+	::-moz-placeholder {
+		color: $color;
+		opacity: $opacity;			 
+	}
+	:-ms-input-placeholder {
+		color: $color;
+		opacity: $opacity;					
+	}
+	:-moz-placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+	::placeholder {
+		color: $color;
+		opacity: $opacity;
+	}
+}
+
+@mixin gradient ($start: #FFFFFF, $end: #000000) {
+  background: $startColor;
+  background: -moz-linear-gradient(top,  $startColor 0%,  $endColor 100%);
+  background: -webkit-linear-gradient(top,  $startColor 0%, $endColor 100%);
+  background: linear-gradient(to bottom,  $startColor 0%, $endColor 100%);
+}
+

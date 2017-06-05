@@ -11,7 +11,7 @@ class Root extends React.Component {
   render () {
     return (
       <div>
-        <Slide className="gold-bg">
+        <Slide className="gold-bg black">
           <WelcomeView />
         </Slide>
       </div>
