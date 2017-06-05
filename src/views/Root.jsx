@@ -1,7 +1,10 @@
 import React from 'react';
 
+import Topics from '../Topics';
 import Slide from '../components/Slide';
 import WelcomeView from './WelcomeView';
+import TopicsList from './TopicsList';
+import ContactView from './ContactView';
 
 class Root extends React.Component {
   constructor (props) {
@@ -11,9 +14,9 @@ class Root extends React.Component {
   render () {
     return (
       <div>
-        <Slide className="gold-bg black">
-          <WelcomeView />
-        </Slide>
+        <WelcomeView topics={Topics} />
+        <TopicsList />
+        <ContactView />
       </div>
     );
   }

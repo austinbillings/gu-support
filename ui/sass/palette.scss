@@ -1,10 +1,18 @@
-$gold: #eb9e36;//s#f2a92d;
+@import 'mixins';
+
+$gold: #eb9e36;
+$orange: #ed622e;
 $black: #131312;
 $white: #eff4ec;
+$blue: #10578b;
 
 .gold { color: $gold; }
 .gold-border { border-color: $gold; }
 .gold-bg { background-color: $gold; }
+
+.orange { color: $orange; }
+.orange-border { border-color: $orange; }
+.orange-bg { background-color: $orange; }
 
 .black { color: $black; }
 .black-border { border-color: $black; }
@@ -13,3 +21,11 @@ $white: #eff4ec;
 .white { color: $white; }
 .white-border { border-color: $white; }
 .white-bg { background-color: $white; }
+
+.blue { color: $blue; }
+.blue-border { border-color: $blue; }
+.blue-bg { background-color: $blue; }
+
+.gold-lava {
+  @include spotlight($gold, $orange);
+}
