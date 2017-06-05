@@ -5,8 +5,10 @@
   "devDependencies": {},
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack",
-    "dev": "atom . && webpack-dev-server"
+    "compile": "NODE_ENV='production' webpack",
+    "clean": "rm -rf dist/*",
+    "build": "npm run clean && npm run compile",
+    "dev": "atom . && npm run start"
   },
   "repository": {
     "type": "git",

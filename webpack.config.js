@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const bundleName = 'bundle';
 
-const prodMode = false; //(process.env.NODE_ENV === 'production');
+const prodMode = (process.env.NODE_ENV === 'production');
 const plugins = [];
 
 if (prodMode) plugins.push(new webpack.optimize.UglifyJsPlugin({ output: { comments: false } }));
