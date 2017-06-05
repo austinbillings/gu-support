@@ -1,7 +1,7 @@
 {
   "name": "gu-support",
   "version": "1.0.0",
-  "main": "webpack.config.js",
+  "main": "index.html",
   "devDependencies": {},
   "scripts": {
     "start": "webpack-dev-server",

@@ -73,7 +73,7 @@ module.exports = {
 			path.resolve(__dirname, 'bower_components')
 		],
 		descriptionFiles: ['package.json', 'bower.json'],
-		extensions: ['.js', '.jsx', '.scss']
+		extensions: ['.js', '.jsx', '.scss', '.css']
 	},
 	plugins
 };
