@@ -65,6 +65,10 @@ button {
     width: 100%;
   }
   
+  &:disabled {
+    opacity: 0.2;
+  }
+  
   &:hover {
     @extend .white-bg;
     @extend .black;
@@ -78,6 +82,11 @@ form {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 0.7em;
+  }
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
   }
   input, textarea {
     display: block;

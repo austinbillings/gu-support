@@ -23,6 +23,7 @@
   "homepage": "https://github.com/austinbillings/gu-support#readme",
   "description": "",
   "dependencies": {
+    "axios": "^0.16.2",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.5.1",
